@@ -37,7 +37,7 @@ def login_page():
             st.success("Login successful!")
             st.session_state['logged_in'] = True
             st.balloons()  # Add a celebratory touch for successful login
-            st.markdown('[Go to Home Page](https://homepy-bx2rsnhevyrwh5wxkvynmy.streamlit.app/)', unsafe_allow_html=True)
+            st.markdown('[Go to Home Page](https://homepy-cpmjvufs5bdwygt7tvrjhh.streamlit.app/)', unsafe_allow_html=True)
         else:
             st.error("Invalid username or password. Please try again.")
 

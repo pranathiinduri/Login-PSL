@@ -10,6 +10,7 @@ def login_page():
     st.title("Welcome to the Login Page")
     st.markdown("""
         <style>
+       
         .login-container {
             text-align: center;
             padding: 20px;
@@ -24,7 +25,7 @@ def login_page():
     # Create a two-column layout for better aesthetics
     col1, col2 = st.columns([1, 2])
     with col1:
-        st.image("https://via.placeholder.com/150", width=100)  # Placeholder for a logo/image
+        st.image("https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-1/347789001_603348111761433_1252695304330161724_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=107&ccb=1-7&_nc_sid=f4b9fd&_nc_ohc=1zS0weTjlX4Q7kNvgFpjRAI&_nc_zt=24&_nc_ht=scontent-ord5-3.xx&_nc_gid=AH-PhgxJaCrht5A_mZkCnWz&oh=00_AYCLy63F0ahvYTHQcM3jnBJpvWD2aVBnDYjl45e2BYBNSg&oe=675C553E", width=100)  # Placeholder for a logo/image
     with col2:
         # Input fields for username and password
         username = st.text_input("Username", placeholder="Enter your username")
@@ -36,7 +37,7 @@ def login_page():
             st.success("Login successful!")
             st.session_state['logged_in'] = True
             st.balloons()  # Add a celebratory touch for successful login
-            st.markdown('[Go to Home Page](https://homepy-cpmjvufs5bdwygt7tvrjhh.streamlit.app/)', unsafe_allow_html=True)
+            st.markdown('[Go to Home Page](https://homepy-bx2rsnhevyrwh5wxkvynmy.streamlit.app/)', unsafe_allow_html=True)
         else:
             st.error("Invalid username or password. Please try again.")
 
@@ -50,5 +51,5 @@ def main_app():
         st.markdown('[Go to Home Page](https://homepy-bx2rsnhevyrwh5wxkvynmy.streamlit.app/)', unsafe_allow_html=True)
 
 # Run the app
-if _name_ == "_main_":
+if __name__ == "__main__":
     main_app()
